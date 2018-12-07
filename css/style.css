@@ -2,66 +2,70 @@
 /* ESTILOS EN GENERAL */
 
 
-body{
 
-  margin-left: 20%;
-  margin-right: 20%;
-  background-image: url(../imagenes/fondo-web5.jpg); 
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
+
+
+body{
+    background-image: url(../imagenes/fondo-web5.jpg); 
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-family: sans-serif;
+
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 768px) {
     body{
        background: #000;
-       margin-left: 0%;
-       margin-right:0%;
+       margin: 0%;
    }
 }
 
-/* CABECERA */
 
-.fondo {
-  background-image: url(../imagenes/fondo-web6.jpg);  
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
+.fondo_central {
+   background-image: url(../imagenes/fondo-web6.jpg);  
+   background-position: center;
+   background-size: cover;
+   background-attachment: fixed;;
 }
+
 
 .cabecera {
-    display: flex;
-    flex-direction: row; /* Aqui ponemos row-reverse lo que hace es cambiar o invertir el orden de los elementos en la fila */
-    justify-content:  space-around;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     background: rgba(0,0,0,0.8); 
-    padding-top: 40px;
-    padding-bottom: 20px;
 
-
-}
+}  
 
 .item_cabecera1{
-    order: 1;
-
+    padding: 25px;
 }
 
 .item_cabecera2{
-    order: 2;
-    line-height: 12px;
-    font-size: 12px;
-    font-family: sans-serif;
+    margin-top: 40px;
+    line-height: 8px;
+    font-size: 14px;
     color: #ffcb39;
 }
 
 .item_cabecera3{
-    order: 3;
+    margin-top: 40px;
+    margin-right: : 20px;
+    line-height: 18px;
     font-size: 12px;
-    font-family: sans-serif;
-    line-height: 20px;
-    font-weight: bold;
     color: #fff;
+}
 
-    
+p {
+      color: #fff;
+}
+
+
+a {
+  color: #fff;
 }
 
 .img_cabecera{
@@ -69,331 +73,86 @@ body{
     padding: 5px;
     border: 2px solid #fff;
     border-radius: 50%;
-}
+} 
 
 
 @media screen and (max-width: 768px) {
+
     .cabecera {
-        flex-direction: column;
-        align-items: center;
-        font-size: 
-    }
-    .item_cabecera1 {
-        order: 1;
-        text-align: center;  
-        
-        
-    }
 
-    .item_cabecera2 {
-        order: 2;
-        text-align: center;
-        font-size: 12px;
-        
-    }
-
-    .item_cabecera3 {
-     order: 3;
-     text-align: center;
- }
-}
-
-p {
-      color: #fff;
-}
-
-a {
-  color: #fff;
-}
-
-.contenido_formacion {
-    display: flex;
-    flex-direction: row; 
-    justify-content:  space-around ;    
-    font-size: 14px;
-    font-family: sans-serif;
-
-}
-
-.item_formacion1{
-    order: 1;
-    
-
-}
-
-.item_formacion2{
-    order: 2;
-    width: 600px;
-    
-}
-
-
-@media screen and (max-width: 768px) {
-    .contenido_formacion {
-        flex-direction: column;
-        align-items: center;
-    }
-    .item_formacion1 {
-        order: 1;
-        text-align: center;  
-        
-        
-    }
-
-    .item_formacion2 {
-        order: 2;
-        text-align: center;
-        width: 600px;
-        
-        
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .contenido_formacion {
-        flex-direction: column;
-        align-items: center;
-    }
-    .item_formacion1 {
-        order: 1;
-        text-align: center;  
-        
-        
-    }
-
-    .item_formacion2 {
-        order: 2;
-        text-align: center;
-        max-width:300px;
-        
-    }
-}
-
-.contenido_portfolio {
-    display: flex;
-    flex-direction: row;
-    justify-content:  space-around ;    
-    font-size: 12px;
-    font-family: sans-serif;
-}
-
-.item_portfolio1{
-    order: 1;
-}
-
-.item_portfolio2{
-    order: 2;
-    width:580px;
-    
-}
-
-
-@media screen and (max-width: 768px) {
-    .contenido_portfolio {
-        flex-direction: column;
-        align-items: center;
-    }
-    .item_portfolio1 {
-        order: 1;
-        text-align: center;  
-        
-        
-    }
-
-    .item_portfolio2 {
-        order: 2;
-        text-align: center;
-        width:500px;
-        
-    }
-}
-
-
-@media screen and (max-width: 480px) {
-    .contenido_portfolio {
-        flex-direction: column;
-        align-items: center;
-
-    }
-    .item_portfolio1 {
-        order: 1;
-        text-align: center;  
-        
-        
-    }
-
-    .item_portfolio2 {
-        order: 2;
-        text-align: center;
-        width:300px;
-        
-    }
-}
-
-
-.contenido_habilidades {
-    display: flex;
-    flex-direction: row;
-    justify-content:  space-around ;    
-    font-size: 12px;
-    font-family: sans-serif;
-}
-
-
-.item_habilidades1{
-    order: 1;
-}
-
-.item_habilidades2{
-    order: 2;
-    width:580px;
-}
-
-@media screen and (max-width: 768px) {
-    .contenido_habilidades {
-        flex-direction: column;
-        align-items: center;
-    }
-    .item_habilidades1 {
-        order: 1;
-        text-align: center;  
-        
-        
-    }
-
-    .item_habilidades2 {
-        order: 2;
-        text-align: center;
-        width:500px;
-        
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .contenido_habilidades {
-        flex-direction: column;
-        align-items: center;
-    }
-    .item_habilidades1 {
-        order: 1;
-        text-align: center;  
-        
-        
-    }
-
-    .item_habilidades2 {
-        order: 2;
-        text-align: center;
-        width:300px;
-        
-    }
-}
-
-
-.contenido_contacto {
- display: flex;
- flex-direction: row;
- justify-content:  space-around ;    
- font-size: 12px;
-
-
-}
-
-.item_contacto1{
-    order: 1;
-}
-
-.item_contacto2{
-    order: 2;
-    width:580px;
-}
-
-
-.formulario {
-    padding-left: 0;
-    display: grid;
-    grid-gap: 2px;
-    grid-template-columns: 1fr 1fr;
-    grid-auto-rows: 80px;
-    height: 330px;
-
-}
-
-
-@media screen and (max-width: 768px) {
-    .contenido_contacto {
-        flex-direction: column;
-        align-items: center;
-    }
-    .item_contacto1 {
-        order: 1;
-        text-align: center;  
-        
-        
-    }
-
-    .item_contacto2 {
-        order: 2;
-        text-align: center;
-        width:500px;
-
-        
-    }
-
-    .formulario {
-        padding-left: 0;
         display: grid;
-        grid-gap: 2px;
         grid-template-columns: 1fr;
-        grid-auto-rows: 80px;
-        height: 530px;
-    }
-}
+    }  
 
-
-@media screen and (max-width: 480px) {
-    .contenido_contacto {
-        flex-direction: column;
-        align-items: center;
-    }
-    .item_contacto1 {
-        order: 1;
-        text-align: center;  
-        
-        
-    }
-
-    .item_contacto2 {
-        order: 2;
+    .item_cabecera1{
         text-align: center;
-        width:300px;
-
-        
     }
+
+    .item_cabecera2{
+      text-align: center;
+      margin-top: 0px;
+  }
+
+  .item_cabecera3{
+    margin-top: 20px;
+    margin-bottom:20px;
+    text-align: center;
 }
+
+}
+
+/* Aqui ya no pongo @media screen and (max-width: 480px) porque para el movil quiero la misma configuracion y temaños */
+
+.formacion {
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 2px;
+}   
 
 .elementos_left {
+    font-size: 12px;
     color: #fff;
     width:100px;
+    height: 15px;
     text-align:center;
-    margin:20px 0px 0px 0px;
+    margin:30px 20px 0px 20px;
     background: rgba(0,0,0,0.8);
     padding:10px 10px 10px 10px;
+    border-radius: 5px;
 
-    
 }
 
 .elementos_right {
-    margin:20px 0px 0px 0px;
+ margin:20px 20px 0px 20px;
+ font-size: 12px;
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .formacion {
+
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }  
+
+    .elementos_left {
+        text-align: center !important;
+
+    }
+
 }
 
 .sombreado {
     color: #fff;
-    background: rgba(0,0,0,0.8); 
+    background: rgba(0,0,0,0.8);    
     padding:10px 10px 10px 10px;
     border: 1px solid #000;
     border-radius: 0px;
     line-height: 18px;
+
 }
 
 .sombreado:hover {
@@ -414,25 +173,29 @@ a {
     text-align: center;
     background: rgba(0,0,0,0.6);
     margin: 0px;
-    padding: 5px; 
+    padding: 6px; 
+    font-size: 14px;
     border: 1px solid #fff;
     
 }
 
-.fecha:hover {
-    color: #000;
+.portfolio {
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 2px;
     text-align: center;
-    background: rgba(0,0,0,0.2);
-
     
-}
+}   
 
-/* PORTFOLIO */
+.centrado {
+    text-align: center;
+}
 
 
 .img_portfolio {
-    width:120px;
-    height:120px;
+    width:100px;
+    height:100px;
     padding: 0px 5px 0px 5px;
 }
 
@@ -440,19 +203,37 @@ a {
     transform: rotate(5deg) scale(1.05) translateY(-10px);
     border-radius: 15px;
     transition-duration: 0.5s;
-    
-
 }
 
-/* BARRAS PROGRESO */
+
+
+
+.habilidades {
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 2px;
+}   
+
+@media screen and (max-width: 768px) {
+
+    .habilidades {
+
+        display: grid;
+        grid-template-columns: 1fr;
+    }  
+
+    .elementos_left {
+        text-align: center !important;
+
+    }
+}
 
 .barra_arriba {
-
     text-align: center;
     color:#fff;         
     padding: 10px;
-    font-size: 14px;
-    background: rgba(0,0,0,0.8);   
+    background: rgba(0,0,0,0.9); 
     transition: 3s;
     border: 1px solid #000;
     border-radius: 20px;
@@ -462,33 +243,79 @@ a {
 
     font-size: 16px;
     background: rgba(0,0,0,0.8);   
-    color: #ffcb39;          
-    
+    color: #ffcb39;         
 }
 
 
-/* BOTON IR ARRIBA */
+.contacto {
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 2px;
+
+}   
+
+@media screen and (max-width: 768px) {
+
+    .contacto {
+
+        display: grid;
+        grid-template-columns: 1fr;
+
+
+    }  
+
+}
+
+.formulario {
+    padding-left: 0;
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 80px;
+    height: 330px;
+    
+
+}
+
+
+@media screen and (max-width: 768px) {
+    .contenido_contacto {
+        flex-direction: column;
+        align-items: center;
+    }
+    .item_contacto1 {
+        order: 1;
+        text-align: center;  
+
+
+    }
+
+    .item_contacto2 {
+        order: 2;
+        text-align: center;
+        width:500px;
+
+
+    }
+
+    .formulario {
+        padding-left: 0;
+        display: grid;
+        grid-gap: 2px;
+        grid-template-columns: 1fr;
+        grid-auto-rows: 80px;
+        height: 530px;
+    }
+}
+
+
+
 
 .social {
     text-align: center;
 }
 
-
-/* BOTON IR ARRIBA */
-
-
-.boton_ir_arriba {
-    text-align:center;
-    background: #000;
-    color: #fff;
-    padding: 25px;
-    width: 180px;
-    margin-bottom: : 20px;
-}
-
-.boton_ir_arriba:hover {
-    background: rgba(0,0,0,0.5);
-}
 
 
 /* FORMULARIO DE CONTACTO */
@@ -500,12 +327,11 @@ form {
 }
 
 .centrado_form{
-
     color: #fff;
     border: 1px solid #666666;
     padding: 20px;
-    background: rgba(0,0,0,0.8);
-    
+    background: rgba(0,0,0,0.9);
+
 }
 
 .boton_submit {
@@ -524,19 +350,11 @@ form {
 }
 
 
-@media screen and (max-width: 768px) {
-    body{
-       background: #000;
-       margin: 0%;
-   }
-
-   .fondo {
-    background: #fff;
-}
 
 
 
-}
+
+
 }
 
 
