@@ -1,0 +1,316 @@
+	
+/* ESTILOS EN GENERAL */
+
+
+body{
+ background-image: url(../imagenes/fondo-web5.jpg); 
+ background-position: center;
+ background-size: cover;
+ background-attachment: fixed;
+}
+
+
+#container {
+  background-image: url(../imagenes/fondo-web6.jpg);  
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+
+  margin: 20px auto;
+  width: 880px;
+  font-family: "Trebuchet MS", arial;
+}
+
+/* CABECERA */
+
+
+#cabecera {
+ background: rgba(0,0,0,0.8);
+ width: 100%;
+ height:120px;
+ padding-top: 40px;
+ padding-bottom: 20px;
+
+
+}
+
+.img_cabecera{
+  float: left;
+  width: 100px;
+  height: 100px;
+  margin: 40px 20px 0px 30px; 
+  padding: 5px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+
+
+
+.nombre {
+  line-height: 16px;
+  color: #ffcb39;
+}
+
+
+h2 {
+ font-size: 14px;
+ color: #fff;
+}
+
+
+.contacto_cabecera_right {
+ font-size: 12px;
+ float:right;
+ margin:-140px 30px 0px 0px;
+ padding: 0px;
+}
+
+.contacto {
+ font-weight: bold;
+ line-height: 16px;
+}
+
+
+/* CUERPO */
+
+
+
+.centrado{
+ margin:10px auto;display:block;
+}
+
+.contenido_formacion {
+ font-size: 12px;
+ width:800px;
+ height:540px;
+ margin-left: 30px;
+ margin-right: 30px;
+}
+
+a {
+  color: #fff;
+}
+
+.contenido_portfolio {
+ font-size: 12px;
+ width:800px;
+ height:260px;
+ margin-left: 30px;
+ margin-right: 30px;
+}
+
+.contenido_habilidades {
+ font-size: 12px;
+ width:800px;
+ height:630px;
+ margin-left: 30px;
+ margin-right: 30px;
+}
+
+.contenido_contacto {
+ font-size: 12px;
+ width:800px;
+ height:630px;
+ margin-left: 30px;
+ margin-right: 30px;
+}
+
+.elementos_left {
+ color: #fff;
+ width:100px;
+ float:left;
+ text-align:center;
+ margin:20px 0px 0px 0px;
+ background: rgba(0,0,0,0.8);
+ padding:10px 10px 10px 10px;
+ border-radius: 5px;
+
+}
+
+.elementos_right {
+ width:580px;
+ float:right;
+ margin:20px 0px 0px 0px;
+
+}
+
+.sombreado {
+ background: rgba(0,0,0,0.8);
+ padding:10px 10px 10px 10px;
+ border: 1px solid #000;
+ border-radius: 0px;
+}
+
+.sombreado:hover {
+ color: #ffcb39;
+ background: rgba(0,0,0,0.9);  	
+ -ms-transform: scale(1.1) translateX(-10px) translateY(-5px); /* IE 9 */
+ -webkit-transform: scale(1.1) translateX(-10px) translateY(-5px); /* Safari 3-8 */
+ transform: scale(1.05) translateX(-8px) translateY(-5px); 
+ transition-duration: 0.5s;
+ border: 1px solid #ffcb39;
+ border-radius: 10px;
+}
+
+
+.linea {
+  width: 600px;
+}
+
+.fecha {
+  width: 80px;
+  color: #fff;
+  text-align: center;
+  background: rgba(0,0,0,0.8);
+  margin: 0px;
+  padding: 4px;
+   border: 1px solid #fff;
+}
+
+.fecha:hover {
+  color: #000;
+  text-align: center;
+  background: rgba(0,0,0,0.2);
+  
+}
+
+
+
+/* PORTFOLIO */
+
+
+.img_portfolio {
+  width:120px;
+  height:120px;
+  padding: 0px 5px 0px 5px;
+}
+
+.img_portfolio:hover {
+	transform: rotate(5deg) scale(1.05) translateY(-10px);
+ border-radius: 15px;
+ transition-duration: 0.5s;
+ 
+
+}
+
+/* BARRAS PROGRESO */
+
+.barra_arriba {
+ text-align: center;
+ color:#fff;         
+ height: 30px;
+ padding-top: 10px;
+ font-size: 14px;
+ background: rgba(0,0,0,0.9);  
+ transition: 1s;
+ border: 1px solid #000;
+ border-radius: 20px;
+}
+
+.barra_arriba:hover {
+
+  font-size: 16px;  
+  background: rgba(0,0,0,0.8);   
+  color: #ffcb39;        
+  
+}
+
+
+.social {
+  text-align: center;
+}
+
+/* BOTON IR ARRIBA */
+
+.boton_ir_arriba {
+  text-align:center;
+  background: #000;
+  color: #fff;
+  padding: 10px;
+  width: 80px;
+  margin-top: 20px;
+}
+
+.boton_ir_arriba:hover {
+ background: rgba(0,0,0,0.5);
+
+}
+
+
+/* FORMULARIO DE CONTACTO */
+
+form {
+  font-size: 12px;
+  color: #000;
+}
+
+.centrado_form{
+  color: #fff;
+
+  margin: 0 auto;
+  border: 1px solid #666666;
+  width: 535px;
+  padding: 20px;
+  background: rgba(0,0,0,0.1);
+  background: rgba(0,0,0,0.8);
+
+}
+
+.elementos_left_form {
+
+ width:150px;
+ float:left;
+ margin:20px 0px 0px 0px;
+ padding:10px 10px 10px 10px;
+ border-radius: 5px;
+
+}
+
+.elementos_right_form {
+ width:200px;
+ float:right;
+ margin:20px 0px 0px 0px;
+
+}
+
+
+
+.boton_submit {
+  background: #111;
+  color: #fff;
+  border: 1px solid #000;
+}
+
+
+.boton_submit:hover {
+  background: red;
+  color: #fff;
+  border: 1px solid #000;
+}
+
+
+
+/* PARA eliminar FLOAT */
+
+
+.clearfix {
+  overflow: auto;
+}
+
+.clear-right {
+  clear: right;
+}
+
+.clear-left {
+  clear: left;
+}
+
+.clear-none {
+  clear: none;
+}
+
+
+
+
+
