@@ -1,9 +1,19 @@
 body{
-    background:  #d8d8d8;
+    background-image: url(../imagenes/fondo-web5.jpg); 
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
     margin-left: 20%;
     margin-right: 20%;
     font-family: sans-serif;
 
+}
+
+.container{
+  background-image: url(../imagenes/fondo-web6.jpg); 
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .barra_lateral {
@@ -61,7 +71,7 @@ body{
 
 
 .sombreado {
-    background: rgba(0,0,0,0.1); 
+    background: rgba(0,0,0,0.2); 
     background-image: url(../imagenes/fondo_cabecera.jpg);
     padding:10px 10px 10px 10px;
     border: 1px solid #000;
